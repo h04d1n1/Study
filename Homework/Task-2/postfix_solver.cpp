@@ -4,6 +4,7 @@ using namespace std;
 
 double operation(char op, double a, double b) {
     switch (op) {
+        case '~': return a - b;
         case '+': return a + b;
         case '-': return a - b;
         case '*': return a * b;
@@ -12,28 +13,31 @@ double operation(char op, double a, double b) {
     }
 }
 
-double postfix_expression_solve(string input) {
+double postfix_expression_solve(string s) {
     stack<double> digits;
-    for (long unsigned int i = 0; i < input.length(); i++){
-        if (input[i] != '_') 
+    for (long unsigned int i = 0; i < s.length(); i++){
+        if (s[i] != ' ')
         {
-            if (isdigit(input[i])) 
+            if (isdigit(s[i])) 
             {
                 string d;
-                while (isdigit(input[i])) {
-                    d += input[i];
+                while (isdigit(s[i])) {
+                    d += s[i];
                     i++;
                 }
                 i--;
                 digits.push(stoi(d));
             }
+
             else 
             {
-                int b = digits.top();
+                int b = digits.top(), a = 0;
                 digits.pop();
-                int a = digits.top();
-                digits.pop();
-                digits.push(operation(input[i], a, b));
+                if (s[i] != '~') {
+                    a = digits.top();
+                    digits.pop();
+                }
+                digits.push(operation(s[i], a, b));
             }
         }
     }
