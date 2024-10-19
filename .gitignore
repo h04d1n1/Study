@@ -1,0 +1,57 @@
+Homework/Task-2/CMakeLists.txt
+CMakePresets.json
+.vscode/settings.json
+Homework/Task-2/out/build/Configure preset using toolchain file/build.ninja
+Homework/Task-2/out/build/Configure preset using toolchain file/cmake_install.cmake
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeCache.txt
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/query/client-vscode/query.json
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/cache-v2-c0c11850a785470d4468.json
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/cmakeFiles-v1-3ebb73acea468c39d49d.json
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/codemodel-v2-bfbc7b262d4031f950a7.json
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/index-2024-10-19T17-22-10-0036.json
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/target-CMakeProject-Debug-e66b999bcd12ce54161a.json
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/toolchains-v1-536a7eaeba1a33fdf7c1.json
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/cmake.check_cache
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/CMakeConfigureLog.yaml
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/rules.ninja
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/TargetDirectories.txt
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CMakeCCompiler.cmake
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_C.bin
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CXX.bin
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CMakeSystem.cmake
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CompilerIdC/a.out
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CompilerIdCXX/a.out
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Homework/Task-2/out/build/default/build.ninja
+Homework/Task-2/out/build/default/cmake_install.cmake
+Homework/Task-2/out/build/default/CMakeCache.txt
+Homework/Task-2/out/build/default/.cmake/api/v1/query/client-vscode/query.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/cache-v2-2fca612b6932fa7d104a.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/cmakeFiles-v1-0a922342b7ace9dfb52c.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/codemodel-v2-5127019113d7716d072f.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-19T17-23-02-0386.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/target-CMakeProject-Debug-e66b999bcd12ce54161a.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/toolchains-v1-536a7eaeba1a33fdf7c1.json
+Homework/Task-2/out/build/default/CMakeFiles/cmake.check_cache
+Homework/Task-2/out/build/default/CMakeFiles/CMakeConfigureLog.yaml
+Homework/Task-2/out/build/default/CMakeFiles/rules.ninja
+Homework/Task-2/out/build/default/CMakeFiles/TargetDirectories.txt
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CMakeCCompiler.cmake
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_C.bin
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CXX.bin
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CMakeSystem.cmake
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CompilerIdC/a.out
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CompilerIdCXX/a.out
+Homework/Task-2/out/build/default/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Homework/Task-2/out/build/default/.ninja_deps
+Homework/Task-2/out/build/default/.ninja_log
+Homework/Task-2/out/build/default/CMakeProject
+Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/main.cpp.o
+Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/postfix_maker.cpp.o
+Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/postfix_solver.cpp.o
