@@ -1,5 +1,6 @@
 Homework/Task-2/CMakeLists.txt
 CMakePresets.json
+.vscode
 .vscode/settings.json
 Homework/Task-2/out/build/Configure preset using toolchain file/build.ninja
 Homework/Task-2/out/build/Configure preset using toolchain file/cmake_install.cmake
@@ -55,3 +56,4 @@ Homework/Task-2/out/build/default/CMakeProject
 Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/main.cpp.o
 Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/postfix_maker.cpp.o
 Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/postfix_solver.cpp.o
+.vscode/c_cpp_properties.json
