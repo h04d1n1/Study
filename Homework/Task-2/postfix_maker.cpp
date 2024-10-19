@@ -47,6 +47,5 @@ string indexToPostfix(string s) {
         output = output + op_stack.top() + '_';
         op_stack.pop();
     }
-    cout << output << endl;
     return output;
 }
