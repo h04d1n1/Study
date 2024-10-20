@@ -56,11 +56,21 @@ Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/main.cpp.o
 Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/postfix_maker.cpp.o
 Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/postfix_solver.cpp.o
 .vscode/c_cpp_properties.json
+<<<<<<< Updated upstream
+=======
+Homework/Task-2/out/build/Configure preset using toolchain file/.ninja_deps
+Homework/Task-2/out/build/Configure preset using toolchain file/.ninja_log
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeProject.exe
+>>>>>>> Stashed changes
 Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/cache-v2-2d770ac323d7a4264ad2.json
 Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/cmakeFiles-v1-dd67c39bf50993a6b0bb.json
 Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/codemodel-v2-1f77909f71297023e608.json
 Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json
+<<<<<<< Updated upstream
 Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/index-2024-10-19T20-17-22-0716.json
+=======
+Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/index-2024-10-19T20-46-46-0753.json
+>>>>>>> Stashed changes
 Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/target-CMakeProject-Debug-2292714807f1b36678f3.json
 Homework/Task-2/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/toolchains-v1-a5e3b33433a25e682bd2.json
 Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeCCompiler.cmake
@@ -73,12 +83,24 @@ Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.29.
 Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdC/CMakeCCompilerId.c
 Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/a.exe
 Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/CMakeCXXCompilerId.cpp
+<<<<<<< Updated upstream
 Homework/Task-2/out/build/default/CMakeProject.exe
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/cache-v2-079df481044eac16361d.json
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/cmakeFiles-v1-b5ab99069480037bedf7.json
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/codemodel-v2-a0f1145c607087fe8f97.json
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-19T20-17-45-0593.json
+=======
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/CMakeProject.dir/main.cpp.obj
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/CMakeProject.dir/postfix_maker.cpp.obj
+Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/CMakeProject.dir/postfix_solver.cpp.obj
+Homework/Task-2/out/build/default/CMakeProject.exe
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/cache-v2-079df481044eac16361d.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/cmakeFiles-v1-ce8fcd4a7fd59c1fb732.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/codemodel-v2-a0f1145c607087fe8f97.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-19T20-47-03-0662.json
+>>>>>>> Stashed changes
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/target-CMakeProject-Debug-2292714807f1b36678f3.json
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/toolchains-v1-a5e3b33433a25e682bd2.json
 Homework/Task-2/out/build/default/CMakeFiles/3.29.5-msvc4/CMakeCCompiler.cmake
@@ -94,6 +116,7 @@ Homework/Task-2/out/build/default/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/CMakeCXX
 Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/main.cpp.obj
 Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/postfix_maker.cpp.obj
 Homework/Task-2/out/build/default/CMakeFiles/CMakeProject.dir/postfix_solver.cpp.obj
+<<<<<<< Updated upstream
 Homework/Task-2/out/build/Configure preset using toolchain file/.ninja_deps
 Homework/Task-2/out/build/Configure preset using toolchain file/.ninja_log
 Homework/Task-2/out/build/Configure preset using toolchain file/CMakeProject.exe
@@ -103,3 +126,7 @@ Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/CMake
 Homework/Task-2/out/build/Configure preset using toolchain file/CMakeFiles/CMakeProject.dir/postfix_solver.cpp.obj
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/cmakeFiles-v1-ce8fcd4a7fd59c1fb732.json
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-19T20-47-03-0662.json
+=======
+>>>>>>> Stashed changes
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-20T18-33-38-0216.json
+Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-20T19-28-26-0921.json

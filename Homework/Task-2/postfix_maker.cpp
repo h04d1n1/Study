@@ -1,22 +1,37 @@
 #include<bits/stdc++.h>
+#include <map>
 
 using namespace std;
 
 int priority(char op) {
-    switch (op) {
-        case '~': return 3;
-        case '*': return 2;
-        case '/': return 2;
-        case '+': return 1;
-        case '-': return 1;
-        case '(': return 0;
-        default: return -1;
+    map<char, int> ops
+    {
+        {'~', 3}, 
+        {'*', 2}, {'/', 2},
+        {'+', 1}, {'-', 1},
+        {'(', 0}
+    };
+    if (ops.count(op)) {
+        return ops[op];
     }
+    return -1;
 }
 
-string indexToPostfix(string s) {
+int priority(string op) {
+    map<string, int> ops
+    {
+        {"sin", 3}
+    };
+    if (ops.count(op)) {
+        return ops[op];
+    }
+    return -1;
+}
+
+string indexToPostfix(string s, string& variables) {
     stack<char> op_stack;
     string output;
+
     for (long unsigned int i = 0; i < s.length(); i++) {
 
         if (isdigit(s[i])) {
@@ -35,14 +50,18 @@ string indexToPostfix(string s) {
 
         else if (s[i] == ')') {
             while (op_stack.top() != '(') {
-                output = output + op_stack.top();
+                output = output + op_stack.top()  + " ";
                 op_stack.pop();
             }
             op_stack.pop();
         }
 
         else {
-            if (priority(s[i]) != 0) {
+            if (isalpha(s[i])) {
+                variables = variables + s[i];
+                output = output + s[i] + " ";
+            }
+            else if (priority(s[i]) != -1) {
 
                 if (s[i] == '-' && (i == 0 || (i > 1 && priority(s[i - 1]) != -1)))
                 {
