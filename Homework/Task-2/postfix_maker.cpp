@@ -1,5 +1,7 @@
-#include<bits/stdc++.h>
-#include <map>
+#include<string>
+#include<map>
+#include<stack>
+#include<iostream>
 
 using namespace std;
 

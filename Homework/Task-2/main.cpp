@@ -1,4 +1,8 @@
-#include<bits/stdc++.h>
+#include<map>
+#include<iostream>
+#include<string>
+#include<iomanip>
+#include<algorithm>
 #include"functions.h"
 
 using namespace std;
@@ -17,6 +21,6 @@ int main(){
     }
 
     cout << fixed << setprecision(6) << "The Answer is...\n" << postfix_expression_solve(expression, variables) << endl;
-
+    
     return 0;
 }

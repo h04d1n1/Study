@@ -1,9 +1,10 @@
-#include<bits/stdc++.h>
+#include<string>
+#include<map>
+#include<stack>
 
 using namespace std;
 
 double operation(char op, double a, double b) {
-    cout << "OPERATION: " << a << ' ' << b << ' ' << op << endl;
     switch (op) {
         case '~': return a - b;
         case '+': return a + b;
