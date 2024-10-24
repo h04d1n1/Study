@@ -1,27 +1,33 @@
-#include<bits/stdc++.h>
+#include<string>
+#include<map>
+#include<stack>
+#include<iostream>
 
 using namespace std;
 
 int priority(char op) {
-    switch (op) {
-        case '~': return 3;
-        case '*': return 2;
-        case '/': return 2;
-        case '+': return 1;
-        case '-': return 1;
-        case '(': return 0;
-        default: return -1;
+    map<char, int> ops
+    {
+        {'~', 3}, 
+        {'*', 2}, {'/', 2},
+        {'+', 1}, {'-', 1},
+        {'(', 0}
+    };
+    if (ops.count(op)) {
+        return ops[op];
     }
+    return -1;
 }
 
-string indexToPostfix(string s) {
+string indexToPostfix(string s, string& variables) {
     stack<char> op_stack;
     string output;
+
     for (long unsigned int i = 0; i < s.length(); i++) {
 
         if (isdigit(s[i])) {
             string digit;
-            while (isdigit(s[i])) {
+            while (isdigit(s[i]) || s[i] == '.') {
                 digit = digit + s[i];
                 i++;
             }
@@ -35,14 +41,43 @@ string indexToPostfix(string s) {
 
         else if (s[i] == ')') {
             while (op_stack.top() != '(') {
-                output = output + op_stack.top();
+                output = output + op_stack.top()  + " ";
                 op_stack.pop();
             }
             op_stack.pop();
         }
 
         else {
-            if (priority(s[i]) != 0) {
+            if (isalpha(s[i])) {
+                string word;
+                while (isalpha(s[i])) {
+                    word = word + s[i];
+                    i++;
+                }
+                i--;
+                if (word.length() == 1) {
+                    variables = variables + s[i];
+                    output = output + s[i] + " ";
+                }
+                else {
+                    string sub_input = "";
+                    int count = 1;
+                    i+=2;
+                    while (count != 0) {
+                        if (s[i] == ')') count-=1;
+                        if (s[i] == '(') count+=1;
+                        if (count != 0) sub_input = sub_input + s[i];
+                        i++;
+                    }
+                    while (!op_stack.empty() && 3 <= priority(op_stack.top())) {
+                        output = output + op_stack.top() + " ";
+                        op_stack.pop();
+                    }
+                    op_stack.push(s[i]);
+                    output = output + indexToPostfix(sub_input, variables) + word + " ";
+                }
+            }
+            else if (priority(s[i]) != -1) {
 
                 if (s[i] == '-' && (i == 0 || (i > 1 && priority(s[i - 1]) != -1)))
                 {
@@ -63,6 +98,5 @@ string indexToPostfix(string s) {
         output = output + op_stack.top() + " ";
         op_stack.pop();
     }
-    cout << output << endl;
     return output;
 }
