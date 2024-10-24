@@ -19,17 +19,6 @@ int priority(char op) {
     return -1;
 }
 
-int priority(string op) {
-    map<string, int> ops
-    {
-        {"sin", 3}
-    };
-    if (ops.count(op)) {
-        return ops[op];
-    }
-    return -1;
-}
-
 string indexToPostfix(string s, string& variables) {
     stack<char> op_stack;
     string output;
@@ -38,7 +27,7 @@ string indexToPostfix(string s, string& variables) {
 
         if (isdigit(s[i])) {
             string digit;
-            while (isdigit(s[i])) {
+            while (isdigit(s[i]) || s[i] == '.') {
                 digit = digit + s[i];
                 i++;
             }
@@ -60,8 +49,33 @@ string indexToPostfix(string s, string& variables) {
 
         else {
             if (isalpha(s[i])) {
-                variables = variables + s[i];
-                output = output + s[i] + " ";
+                string word;
+                while (isalpha(s[i])) {
+                    word = word + s[i];
+                    i++;
+                }
+                i--;
+                if (word.length() == 1) {
+                    variables = variables + s[i];
+                    output = output + s[i] + " ";
+                }
+                else {
+                    string sub_input = "";
+                    int count = 1;
+                    i+=2;
+                    while (count != 0) {
+                        if (s[i] == ')') count-=1;
+                        if (s[i] == '(') count+=1;
+                        if (count != 0) sub_input = sub_input + s[i];
+                        i++;
+                    }
+                    while (!op_stack.empty() && 3 <= priority(op_stack.top())) {
+                        output = output + op_stack.top() + " ";
+                        op_stack.pop();
+                    }
+                    op_stack.push(s[i]);
+                    output = output + indexToPostfix(sub_input, variables) + word + " ";
+                }
             }
             else if (priority(s[i]) != -1) {
 
@@ -84,6 +98,5 @@ string indexToPostfix(string s, string& variables) {
         output = output + op_stack.top() + " ";
         op_stack.pop();
     }
-    cout << output << endl;
     return output;
 }
