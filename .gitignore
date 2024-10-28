@@ -134,3 +134,64 @@ Homework/Task-2/out/build/default/.cmake/api/v1/reply/cmakeFiles-v1-92a2dfe9b464
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-21T06-59-02-0117.json
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-21T09-57-03-0332.json
 Homework/Task-2/out/build/default/.cmake/api/v1/reply/index-2024-10-24T14-07-09-0596.json
+Algorithms/out/build/Configure preset using toolchain file/.ninja_log
+Algorithms/out/build/Configure preset using toolchain file/build.ninja
+Algorithms/out/build/Configure preset using toolchain file/cmake_install.cmake
+Algorithms/out/build/Configure preset using toolchain file/CMakeCache.txt
+Algorithms/out/build/Configure preset using toolchain file/Myproject.exe
+Algorithms/out/build/Configure preset using toolchain file/.cmake/api/v1/query/client-vscode/query.json
+Algorithms/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/cache-v2-1f24a92524bc303e19b5.json
+Algorithms/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/cmakeFiles-v1-8108b5959b25f5e353e9.json
+Algorithms/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/codemodel-v2-3386893d73bfdcf84387.json
+Algorithms/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json
+Algorithms/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/index-2024-10-28T21-12-40-0665.json
+Algorithms/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/target-Myproject-Debug-1853885b8aeeda207a18.json
+Algorithms/out/build/Configure preset using toolchain file/.cmake/api/v1/reply/toolchains-v1-a5e3b33433a25e682bd2.json
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/cmake.check_cache
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/CMakeConfigureLog.yaml
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/rules.ninja
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/TargetDirectories.txt
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeCCompiler.cmake
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeCXXCompiler.cmake
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeDetermineCompilerABI_C.bin
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeDetermineCompilerABI_CXX.bin
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeRCCompiler.cmake
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeSystem.cmake
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdC/a.exe
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdC/CMakeCCompilerId.c
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/a.exe
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Algorithms/out/build/Configure preset using toolchain file/CMakeFiles/Myproject.dir/Exponent_as_infinite_fraction.cpp.obj
+Homework/Task-2/functions.h
+Homework/Task-2/main.cpp
+Homework/Task-2/postfix_maker.cpp
+Homework/Task-2/postfix_solver.cpp
+Laboratories/Lab-1/Variant 8.cpp
+Laboratories/Lab-2/Variant 5.cpp
+Laboratories/Lab-3/Variant 7.cpp
+out/build/Configure preset using toolchain file/build.ninja
+out/build/Configure preset using toolchain file/cmake_install.cmake
+out/build/Configure preset using toolchain file/CMakeCache.txt
+out/build/Configure preset using toolchain file/.cmake/api/v1/query/client-vscode/query.json
+out/build/Configure preset using toolchain file/.cmake/api/v1/reply/cache-v2-ee54b3ca51861fd093a6.json
+out/build/Configure preset using toolchain file/.cmake/api/v1/reply/cmakeFiles-v1-8a31bb2d2a42762a1b35.json
+out/build/Configure preset using toolchain file/.cmake/api/v1/reply/codemodel-v2-3e873b4192e8b61d6115.json
+out/build/Configure preset using toolchain file/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json
+out/build/Configure preset using toolchain file/.cmake/api/v1/reply/index-2024-10-28T21-09-58-0646.json
+out/build/Configure preset using toolchain file/.cmake/api/v1/reply/toolchains-v1-a5e3b33433a25e682bd2.json
+out/build/Configure preset using toolchain file/CMakeFiles/cmake.check_cache
+out/build/Configure preset using toolchain file/CMakeFiles/CMakeConfigureLog.yaml
+out/build/Configure preset using toolchain file/CMakeFiles/rules.ninja
+out/build/Configure preset using toolchain file/CMakeFiles/TargetDirectories.txt
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeCCompiler.cmake
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeCXXCompiler.cmake
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeDetermineCompilerABI_C.bin
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeDetermineCompilerABI_CXX.bin
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeRCCompiler.cmake
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CMakeSystem.cmake
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdC/a.exe
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdC/CMakeCCompilerId.c
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/a.exe
+out/build/Configure preset using toolchain file/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Algorithms/out/build/Configure preset using toolchain file/.ninja_deps
+Algorithms/CMakeLists.txt
