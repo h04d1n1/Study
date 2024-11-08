@@ -1,13 +1,9 @@
-#include<map>
-#include<iostream>
-#include<string>
-#include<iomanip>
-#include<algorithm>
-#include"functions.h"
+#include "functions.h"
 
 using namespace std;
 
-int main(){
+int main()
+{
     string expression, vars;
     getline(cin, expression);
 
@@ -15,16 +11,17 @@ int main(){
     expression = indexToPostfix(expression, vars);
 
     map<char, double> variables{
-        {'p', 3.14159265358979323846}
-    };
-    for (char var : vars) {
-        if (variables.count(var) == 0) {
+        {'p', 3.14159265358979323846}};
+    for (char var : vars)
+    {
+        if (variables.count(var) == 0)
+        {
             cout << "Variable " << char(toupper(var)) << ": \n";
             cin >> variables[var];
         }
     }
 
-    cout << fixed << setprecision(6) << "The Answer is...\n" << postfix_expression_solve(expression, variables) << endl;
-    
+    cout << setprecision(6) << "Result: " << postfix_expression_solve(expression, variables) << endl;
+
     return 0;
 }
