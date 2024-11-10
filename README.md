@@ -1,1 +1,1 @@
-Всем привет. Это репозиторий для хранения всяких штук по программированию по ходу обучения в университете :)
+Hello there! This is my first repository for university coding <3
