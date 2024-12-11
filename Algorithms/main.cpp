@@ -1,121 +1,98 @@
 #include <iostream>
 #include <string>
+#include <stdlib.h> 
 
 using namespace std;
 
-struct Man
+struct Student
 {
-    int N;
-    string fio;
+    string name = "";
+    int mark = -1;
 };
 
-struct ListItem
+struct Node
 {
-    Man man;
-    ListItem *pNext, *pPred;
+    Student stud;
+    Node *next = nullptr;
 };
 
 // ListItem *pF1=0;
 struct List
 {
-    ListItem *pFirst;
+    Node *first;
 };
 
-void addInList(List &list, ListItem *p, bool flag = true) // flag = true Добавляем в начало списка
+void addInList(Node* nw, List& lst)
 {
-    if (list.pFirst == 0)
-    {
-        list.pFirst = p->pNext = p->pPred = p;
+    if (lst.first == nullptr) {
+        lst.first = nw;
     }
-    else
-    {
-        p->pNext = list.pFirst;
-        p->pPred = list.pFirst->pPred;
-        list.pFirst->pPred->pNext = p;
-        list.pFirst->pPred = p;
-        if (flag) list.pFirst = p;
-    }
-}
-
-void addAfterElement(ListItem *pZad, ListItem *p)
-{
-    p->pNext = pZad->pNext;
-    p->pPred = pZad;
-    pZad->pNext->pPred = p;
-    pZad->pNext = p;
-}
-
-ListItem *remove(List &list, ListItem *p)
-{
-    if (list.pFirst == 0 || p == 0)
-        return 0;
-    if (list.pFirst->pNext == list.pFirst)
-    {
-        if (p == list.pFirst)
-        {
-            list.pFirst = 0;
-            return p;
+    else {
+        Node* cur = lst.first;
+        while (cur->next) {
+            cur = cur->next;
         }
-        else return 0;
+        cur->next = nw;
     }
-    if (p == list.pFirst) list.pFirst = list.pFirst->pNext;
-    p->pPred->pNext = p->pNext;
-    p->pNext->pPred = p->pPred;
-    return p;
 }
 
-void print(List list)
-{
-    ListItem *p = list.pFirst;
-    do {
-        cout << endl << p->man.fio << ' ' << p->man.N;
-        p = p->pNext;
-    } while (p != list.pFirst);
+void removeFromList(string rm, List& lst) {
+    Node* cur = lst.first;
+
+    if (cur->stud.name == rm) {
+        if (cur->next == nullptr) lst.first == nullptr;
+        else lst.first = cur->next;
+        return;
+    }
+
+    while (cur->next) {
+        if (cur->next->stud.name == rm) {
+            if (cur->next->next == nullptr) cur->next == nullptr;
+            else cur->next = cur->next->next;
+            return;
+        }
+        cur = cur->next;
+    }
+    cout << "Invalid name\n";
 }
 
-string str[] = {"Ivanov", "Petrov", "Sidorov", "Kuznecov",
-                "Ivanova", "Petrova", "Sidorova", "Kuznecova", "Vasilev",
-                "Vasileva"};
+void printList(List& lst) {
+    cout << "\nStudents:\n";
+    int count = 1;
+    Node* cur = lst.first;
+    while (cur->next) {
+        cout << count << ". " << "Name: " << cur->stud.name << ". Mark: " << cur->stud.mark << endl;
+        cur = cur->next;
+        count++;
+    }
+    cout << count << ". " << "Name: " << cur->stud.name << ". Mark: " << cur->stud.mark << endl;
+    cout << "\n";
+}
 
 int main()
 {
-    List l1 = {0};
-    ListItem *p;
-    for (int i = 1; i < 10; i++)
-    {
-        p = new ListItem;
-        p->man.N = rand() % 100;
-        p->man.fio = str[rand() % 10];
-        addInList(l1, p, false);
+    List list = {0};
+    int cmd = 1;
+    Node* p;
+    while (cmd != 0) {
+        cout << "Input number:\n0. Exit\n1. Add student\n2. Remove student (by name)\n3. Search (by name)\n4. Show all students\n";
+        cin >> cmd;
+        if (cmd == 1) {
+            p = new Node;
+            cout << "Input student's name: "; cin >> p->stud.name;
+            cout << "Input student's mark: "; cin >> p->stud.mark;
+            addInList(p, list);
+        }
+        else if (cmd == 2) {
+            cout << "Input name\n";
+            string nm;
+            cin >> nm;
+            removeFromList(nm, list);
+        }
+        else if (cmd == 4) {
+            printList(list);
+        }
     }
-    cout << "Before sort" << endl;
-    print(l1);
-    
-    p = l1.pFirst->pNext; // Начинаем со второго элемента
-    do
-    {
-        ListItem *p1 = p->pNext; // Запоминаем следующий элемент
-        ListItem *p2 = l1.pFirst;  // Просматриваем элементы предшествующие p
-        do
-        {
-            if (p2->man.N > p->man.N) // Элемент p нужно вставить перед p2 (сортировка по возрасту)
-            {
-                p = remove(l1, p); // Извлекаем элемент
-                if (p == 0)
-                {
-                    cout << "List Error!!!!";
-                    system("pause");
-                    return 0;
-                }
-                if (p2 == l1.pFirst) addInList(l1, p, true); // Вставляем в списка 
-                else addAfterElement(p2->pPred, p);
-                break;
-            }
-            p2 = p2->pNext; // Переход к след. элементу
-        } while (p2 != p);
-        p = p1; // Переход к след. элементу
-    } while (p != l1.pFirst);
-    cout << endl << endl << "After sort" << endl;
-    print(l1);
+
     return 0;
 }
