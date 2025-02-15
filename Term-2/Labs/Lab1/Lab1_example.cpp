@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -36,6 +37,19 @@ public:
 };
 
 int main() {
+    int n;
+    ifstream in("auto.txt");
+    in >> n;
+    Auto *autos = new Auto[n];
+    for (int i = 0; i < n; i++) {
+        string tmp;
+        int c;
+        in >> tmp >> c;
+        autos[i].set(tmp, c);
+    }
 
+    for (int i = 0; i < n; i++) {
+        autos[i].print();
+    }
     return 0;
 }
