@@ -4,17 +4,19 @@
 class CString {
 private:
     char* cstring;
+    size_t length;
+
 public:
-    CString(int);
+    CString(const char*);
     CString(const CString&);
     ~CString();
-    CString operator++();
-    CString operator--();
+    CString& operator++();
+    CString& operator--();
     CString operator+(const CString&) const;
     CString& operator=(const CString&);
+    CString operator*(int);
+    std::ostream& operator<<(std::ostream&);
     void readFromFile(std::string path);
 };
 
-CString operator*(const CString&, int);
 CString operator*(int, const CString&);
-std::ostream& operator<<(std::ostream&, const CString&);
