@@ -63,22 +63,25 @@ public:
         return *this; // CString nw = std::move(old);
     }
 
+    // Increment operator
     CString& operator++() {
         length++;
         std::strcat(str, "!");
         return *this;
     }
 
+    // Decrement operator
     CString& operator--() {
         if (length > 0) {
             length--;
-            str[length] = '\0'; // Because c-style strings end with '\0'
+            str[length] = '\0'; // Because C-style string ends with '\0'
         }
         return *this;
     }
 
+    // Addition operator
     CString operator+(const CString& other) const {
-        CString newStr;
+        CString newStr("");
         newStr.length = length + other.length;
         newStr.str = new char[newStr.length + 1];
         std::strcpy(newStr.str, str);
@@ -86,7 +89,8 @@ public:
         return std::move(newStr);
     }
 
-    CString operator*(const int multiplier) {
+    // Multiplication operator
+    CString operator*(const int multiplier) const {
         if (multiplier == 0) {
             return CString("");
         }
@@ -99,10 +103,12 @@ public:
         return std::move(newStr);
     }
 
+    // Get length of the string
     size_t getLength() const {
         return length;
     }
 
+    // Get C-style string
     const char* getCString() const {
         return str;
     }
@@ -129,13 +135,5 @@ CString operator*(const int multiplier, const CString& other) {
 }
 
 int main() {
-    CString str1("Hello,");
-    CString str2("World ");
-    CString str3 = str1 + str2;
-    std::cout << str3 << std::endl;
-    CString str4 = str3 * 3;
-    std::cout << str4 << std::endl;
-    CString str5 = 2 * str4;
-    std::cout << str5 << std::endl;
     return 0;
 }
