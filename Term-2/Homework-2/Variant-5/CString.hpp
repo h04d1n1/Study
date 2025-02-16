@@ -15,8 +15,8 @@ public:
     CString operator+(const CString&) const;
     CString& operator=(const CString&);
     CString operator*(int);
-    std::ostream& operator<<(std::ostream&);
     void readFromFile(std::string path);
 };
 
 CString operator*(int, const CString&);
+std::ostream& operator<<(std::ostream&, const CString&);

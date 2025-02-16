@@ -1,4 +1,4 @@
-#include "CString.hpp"
+//#include "CString.hpp"
 #include <cstring>
 #include <iostream>
 
@@ -126,4 +126,16 @@ CString operator*(const int multiplier, const CString& other) {
         std::strcat(newStr.str, other.str);
     }
     return std::move(newStr);
+}
+
+int main() {
+    CString str1("Hello,");
+    CString str2("World ");
+    CString str3 = str1 + str2;
+    std::cout << str3 << std::endl;
+    CString str4 = str3 * 3;
+    std::cout << str4 << std::endl;
+    CString str5 = 2 * str4;
+    std::cout << str5 << std::endl;
+    return 0;
 }
