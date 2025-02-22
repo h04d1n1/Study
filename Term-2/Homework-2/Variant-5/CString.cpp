@@ -124,8 +124,3 @@ CString operator*(const int multiplier, const CString& other) {
     }
     return std::move(newStr);
 }
-
-int main() {
-    std::cout << "All working!" << std::endl;
-    return 0;
-}
