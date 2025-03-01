@@ -23,11 +23,11 @@ protected:
 public:
     Vector3D(double x = 0, double y = 0, double z = 0) : Vector2D(x, y), z(z) {}
 
-    double length() const {
+    double length() const override {
         return std::sqrt(x * x + y * y + z * z);
     }
 
-    void print() const {
+    void print() const override {
         std::cout << "(" << x << ", " << y << ", " << z << ") -> " << length() << std::endl;
     }
 };
