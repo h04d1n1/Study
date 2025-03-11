@@ -1,13 +1,4 @@
 CMakePresets.json
 CMakeLists.txt
-<<<<<<< HEAD
 build/
-=======
-out/
-build/
->>>>>>> homework
-=======
 .vscode/
-build/
-out/
->>>>>>> labs
