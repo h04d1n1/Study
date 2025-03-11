@@ -2,4 +2,9 @@ CMakePresets.json
 .vscode/settings.json
 .vscode/c_cpp_properties.json
 CMakeLists.txt
+<<<<<<< HEAD
 build/
+=======
+out/
+build/
+>>>>>>> homework
