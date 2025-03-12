@@ -1,0 +1,14 @@
+Default vector:
+First 1000 ruble 1
+Second 9999 dollar 2
+Third 222 pound 2
+
+Sorted vector:
+Third 222 pound 2
+First 1000 ruble 1
+Second 9999 dollar 2
+
+Deque:
+Third 222 pound 2
+First 1000 ruble 1
+Second 9999 dollar 2
