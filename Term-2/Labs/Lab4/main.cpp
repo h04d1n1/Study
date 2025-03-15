@@ -5,10 +5,6 @@
 #include<algorithm>
 #include<fstream>
 
-bool comp(const Deposit& a, const Deposit& b) {
-    return a.getValue() <= b.getValue();
-}
-
 int main() {
     std::vector<Deposit> depos;
     std::deque<Deposit> depos_q;
@@ -28,7 +24,7 @@ int main() {
         out << depos[i].getLabel() << " " << depos[i].getValue() << " "
             << depos[i].getCurrencyType() << " " << depos[i].getRate() << "\n";
     }
-    sort(depos.begin(), depos.end(), comp);
+    sort(depos.begin(), depos.end(), [](Deposit& a, Deposit& b){return a.getValue() < b.getValue();});
     out << "\nSorted vector:\n";
     for (int i = 0; i < 3; i++) {
         out << depos[i].getLabel() << " " << depos[i].getValue() << " "
