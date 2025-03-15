@@ -39,6 +39,10 @@ public:
         return *this;
     }
 
+    bool operator<(const Deposit& obj) {
+        return this->value < obj.value;
+    }
+
     std::string getLabel() const {return this->label;}
     int getValue() const {return this->value;}
     std::string getCurrencyType() const {return this->currency_type;}

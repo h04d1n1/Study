@@ -24,7 +24,7 @@ int main() {
         out << depos[i].getLabel() << " " << depos[i].getValue() << " "
             << depos[i].getCurrencyType() << " " << depos[i].getRate() << "\n";
     }
-    sort(depos.begin(), depos.end(), [](Deposit& a, Deposit& b){return a.getValue() < b.getValue();});
+    sort(depos.begin(), depos.end());
     out << "\nSorted vector:\n";
     for (int i = 0; i < 3; i++) {
         out << depos[i].getLabel() << " " << depos[i].getValue() << " "
