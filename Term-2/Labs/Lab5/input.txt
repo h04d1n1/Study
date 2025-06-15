@@ -1,0 +1,3 @@
+Vklad1 1000 ruble 1
+Deposit 9999 dollar 2
+Third 222 pound 4
